@@ -48,3 +48,35 @@ count_5 = t.count(5)"""
 
 
 #stopped at 05:39 am 
+
+#jumped in 6:03 need to check before this time 
+
+#dictonry : 
+
+#deep copy is this if i put something by reference it will change the next also 
+# a = [1,3,45,6,7]
+
+# b = a 
+# b[0] = 100 
+
+# print(a)
+
+# #shallow copy : it hide the changes because it have it's own space
+
+# c = b.copy()
+# print(c) #it's also able to copy the things like oop 
+
+# # Dictionary with duplicate keys (last value wins)
+# d = {2: "value2", 4: "value4", 5: "value5", 6: "value6", 
+#      5: "new_value5", 4: "new_value4", 3: "value3", 3: "new_value3"}
+# print("Dictionary d:", d)
+# d2 = d.copy()
+# print("Copy d2:", d2)
+# # print(d2)
+
+# d2 = d.get(4)
+
+# print(d.items())
+
+
+
