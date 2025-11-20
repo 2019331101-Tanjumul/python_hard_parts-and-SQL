@@ -137,20 +137,36 @@ count_5 = t.count(5)"""
 
 #now the exception handeling part: 
 
-num = int(input('Input a number : '))
-try: 
-    print(10/num)
-except Exception as err : 
-    print("You missedmatched someting , check it again !!")
-else : 
-    print("Good there is no error , Wallah !")
+# num = int(input('Input a number : '))
+# try: 
+#     print(10/num)
+# except Exception as err : 
+#     print("You missedmatched someting , check it again !!")
+# else : 
+#     print("Good there is no error , Wallah !")
     
-finally : 
-    print('No matter what i will run ! ')
+# finally : 
+#     print('No matter what i will run ! ')
 
-print(f"My sum is currect with {num}")
+# print(f"My sum is currect with {num}")
 ##now if i try to divide 10 by 0 it will show : ZeroDivisionError: division by zero in the output to solve this: i will use try catch above 
 #you also see it printing the last line that means if it finds any error it will execute the next corrosponding code here; 
 #when exception don't execute that means the else will work too with try block and the rest of the codes after that will work too 
 
 #finally see by yourself ! 
+
+#raise 
+
+age = int(input("please enter your age to enter the club : "))
+
+try : 
+    if age < 10 or age > 18: 
+        raise ValueError("Your age must be in between 10 - 18!")
+    else : 
+        print("wecome to the club Tanju")
+except Exception as err :
+    print(f'An error occured at somepoint {err}')
+
+print("the club will start soon ! ")
+#no matter what the right age i put it will throw an error always !! 
+
