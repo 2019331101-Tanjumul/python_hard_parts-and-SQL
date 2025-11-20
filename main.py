@@ -125,12 +125,32 @@ count_5 = t.count(5)"""
 # print(b)
 
 #making the distinct and summing them as outputs here : 
-d1 = {10:100,20:200,40:300}
-d2 = {40:400,50:500,60:600}
+# d1 = {10:100,20:200,40:300}
+# d2 = {40:400,50:500,60:600}
 
-for i in d2: 
-    if i in d1.keys():
-        d1[i]+=d2[i]
-    else : 
-        d1[i] = d2[i]
-print(d1)
+# for i in d2: 
+#     if i in d1.keys():
+#         d1[i]+=d2[i]
+#     else : 
+#         d1[i] = d2[i]
+# print(d1)
+
+#now the exception handeling part: 
+
+num = int(input('Input a number : '))
+try: 
+    print(10/num)
+except Exception as err : 
+    print("You missedmatched someting , check it again !!")
+else : 
+    print("Good there is no error , Wallah !")
+    
+finally : 
+    print('No matter what i will run ! ')
+
+print(f"My sum is currect with {num}")
+##now if i try to divide 10 by 0 it will show : ZeroDivisionError: division by zero in the output to solve this: i will use try catch above 
+#you also see it printing the last line that means if it finds any error it will execute the next corrosponding code here; 
+#when exception don't execute that means the else will work too with try block and the rest of the codes after that will work too 
+
+#finally see by yourself ! 
