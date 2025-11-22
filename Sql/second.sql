@@ -69,6 +69,8 @@ INSERT INTO employee ( fname , lname , email , dept , salary , hire_date) VALUES
 ('Betty', 'Martin', 'betty.martin@company.com', 'IT', 65500.00, '2024-02-18'),
 ('Daniel', 'Lee', 'daniel.lee@company.com', 'Operations', 46500.00, '2024-02-19'),
 ('Donna', 'Perez', 'donna.perez@company.com', 'HR', 53800.00, '2024-02-20'),
+('Tanjumul', 'Alom', 'tanjumul@company.com', 'HR', 53800.00, '2024-02-20'),
+('tanvir', 'Rahman', 'tanvir@company.com', 'HR', 59800.00, '2024-02-20'),
 ('Alice', 'Brown', 'alice.brown@company.com', 'IT', 60000.00, default);
 
 -- -- SELECT * FROM employee WHERE email = 'crackerroot4@gmail.com';
@@ -89,4 +91,9 @@ INSERT INTO employee ( fname , lname , email , dept , salary , hire_date) VALUES
 -- from employee 
 -- where dept = 'HR'
 -- select * from employee order by emp_id; 
-select * from employee LIMIT 5; 
+-- select * from employee LIMIT 5; 
+
+-- like clause to use : dsa and sql daily and backend maybe less time but daily while it's done then go for doing projects and learn advanced  calculus for fun check the khan achedey ! 
+
+-- select * from employee where fname like '%l';
+select * from employee where fname like '%u%'; --finding letters between anything so we do by using the like clause here
