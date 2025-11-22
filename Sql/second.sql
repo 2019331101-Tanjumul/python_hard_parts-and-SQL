@@ -91,9 +91,35 @@ INSERT INTO employee ( fname , lname , email , dept , salary , hire_date) VALUES
 -- from employee 
 -- where dept = 'HR'
 -- select * from employee order by emp_id; 
--- select * from employee LIMIT 5; 
+-- select * from employee ; 
 
 -- like clause to use : dsa and sql daily and backend maybe less time but daily while it's done then go for doing projects and learn advanced  calculus for fun check the khan achedey ! 
 
 -- select * from employee where fname like '%l';
-select * from employee where fname like '%u%'; --finding letters between anything so we do by using the like clause here
+-- select * from employee where fname like '%u%'; --finding letters between anything so we do by using the like clause here
+-- select * from employee where dept like '__'; -- searching tthe two carectered dept , i can search 2 charectered any pattern by using __ and for one i can use _ ; 
+
+
+
+--aggregate functions to use : count , sum , min , max , avg  ; now , 
+
+-- select dept from employee; 
+-- SELECT dept FROM employee GROUP BY dept ORDER BY dept;
+-- See all employees with their department rankings
+-- SELECT 
+--     emp_id,
+--     fname,
+--     lname,
+--     dept,
+--     salary,
+--     RANK() OVER (PARTITION BY dept ORDER BY salary DESC) as dept_rank
+-- FROM employee
+-- ORDER BY dept, dept_rank;
+
+-- select fname , lname , dept, salary from employee order by salary desc limit 1; 
+-- select fname , lname , dept, salary from employee where salary = (select max(salary)from employee);
+
+-- select fname , lname , dept, salary from employee order by salary desc limit 5  ; 
+
+select fname , lname , dept, salary , rank() over(partition by dept order by salary desc) as ranked_salry
+from employee;
