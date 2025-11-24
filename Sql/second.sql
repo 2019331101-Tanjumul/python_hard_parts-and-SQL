@@ -137,10 +137,21 @@ INSERT INTO employee ( fname , lname , email , dept , salary , hire_date) VALUES
 
 -- select * from employee; 
 
-select emp_id , concat(fname,lname) as fullname from employee  where fname like 'T%' order by emp_id desc; 
+-- select emp_id , concat(fname,lname) as fullname from employee  where fname like 'T%' order by emp_id desc; 
 
+--using the substring : 
 
+-- select substr('Hello Tanjumul' , 1,9); 
+--it's showing : Hello Tan  
+-- select substr('hello tanjumul alom siam ', 7,9);
 
+--showing : tanjumul : that means i can successfully decrementing it's output ! 
+
+--replace function : 
+
+-- select replace('This word is yet to be changed' , 'This' , 'Tanjumul') -- where , target word , change with this word 
+
+-- select replace(dept, 'IT','HR') from employee; --Changing the dept collumn's it to hr with replace function 
 
 
 
