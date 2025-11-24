@@ -126,3 +126,5 @@ INSERT INTO employee ( fname , lname , email , dept , salary , hire_date) VALUES
 select dept , sum(salary) from employee group by dept ; 
 
 --1:50:00 start the session from here; 
+
+--compliting the whole section of the ecommerce -react query in 2 hours !! 
