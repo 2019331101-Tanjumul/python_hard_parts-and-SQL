@@ -3,7 +3,7 @@ DROP TABLE IF EXISTS persons;
 CREATE TABLE persons(
     p_id SERIAL PRIMARY KEY,  
     fname VARCHAR(50),  -- Added fname column
-    name VARCHAR(50),
+    name VARCHAR(50) not null,
     city VARCHAR(50) NOT NULL,
     age VARCHAR(50) NOT NULL
 );
@@ -28,6 +28,9 @@ ALTER TABLE persons RENAME COLUMN smoker TO addicted;
 INSERT INTO persons (fname, name, city, age) VALUES ('Smith', 'Wilson', 'New York', '30');
 
 alter table persons alter column fname set default 'unknown'; 
+insert into persons( name , city , age) values('tanjumul','new-south-walse','27');
+
+alter table persons alter column fname drop default;
 insert into persons( name , city , age) values('tanjumul','new-south-walse','27');
 
 SELECT * FROM persons;
