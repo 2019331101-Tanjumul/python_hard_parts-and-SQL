@@ -137,7 +137,7 @@ INSERT INTO employee ( fname , lname , email , dept , salary , hire_date) VALUES
 
 -- select * from employee; 
 
-select concat(fname,lname) from employee; 
+select emp_id , concat(fname,lname) as fullname from employee  where fname like 'T%' order by emp_id desc; 
 
 
 
