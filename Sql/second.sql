@@ -171,7 +171,10 @@ INSERT INTO employee ( fname , lname , email , dept , salary , hire_date) VALUES
 
 
 
+--triming from a function now , is there is someting where multiple spacing occures then you will trim then you can do what ever 
+--here i want to get the currect length of the words in a substring but there some unexpected spacing has occurs i don't want those i will do : 
 
+select length(trim('      Tanjumul     '));
 
 
 
