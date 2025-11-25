@@ -34,5 +34,15 @@ alter table persons alter column fname drop default;
 insert into persons( name , city , age) values('tanjumul','new-south-walse','27');
 
 SELECT * FROM persons;
+/*
+Practice tasks : 
+# Date : 25/11/25
 
+1. Find the total no of employees in database  ?   answer : select count(emp_id) as Employee_count from employee; 
+2. find the number of employees in each department. answer : select dept , count(emp_id) from employee group by dept; 
+3. find lowest salary paying answer : select fname , lname , salary, dept from  employee order by salary asc limit 1 ; 
+4. find highest salary paying answer : select fname , lname , salary, dept from  employee order by salary desc limit 1 ; 
+5. find total salary paying in HR department answer : select dept, sum(salary) as total_salary from  employee where dept = 'HR' group by dept; 
+6. average salary paying to each department answer : select dept, avg(salary) as avg_salary from  employee group by dept ;
+*/
 --start forom : 2:31 --check is the topic ! 
