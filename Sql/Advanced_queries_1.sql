@@ -46,3 +46,14 @@ Practice tasks :
 6. average salary paying to each department answer : select dept, avg(salary) as avg_salary from  employee group by dept ;
 */
 --start forom : 2:31 --check is the topic ! 
+
+
+/*for check 
+
+
+/*from check 
+
+drop table if exists contact(
+name varchar(20), 
+mob varchar(11) unique check(length(mob) >= 11)
+);*/
