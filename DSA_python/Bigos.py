@@ -37,14 +37,25 @@
 #for an analogy : 
 
 
-def lin_in(n): 
-    for i in range(n): 
+# def lin_in(n): 
+#     for i in range(n): 
       
         
-        for j in range(n): 
-            print(i,j)
+#         for j in range(n): 
+#             print(i,j)
         
-        for k in range(n): 
-            print(k)
-lin_in(10)
+#         for i in range(n): 
+#             print(i)
+# lin_in(6)
 
+# finding the biggest number in the array : 
+
+def find_biggest_number(simple_array):
+    biggest_num = simple_array[0]
+    
+    for i in range(1,len(simple_array)):
+        if biggest_num > simple_array:
+            biggest_num = simple_array[i]
+            
+            print(biggest_num) 
+            
