@@ -51,11 +51,17 @@
 # finding the biggest number in the array : 
 
 def find_biggest_number(simple_array):
-    biggest_num = simple_array[0]
+    biggest_num = simple_array[0] #------> o(1)
     
-    for i in range(1,len(simple_array)):
-        if biggest_num > simple_array:
-            biggest_num = simple_array[i]
+    for i in range(1,len(simple_array)): #------ o(n)
+        if biggest_num > simple_array:  #-------- o(1)
+            biggest_num = simple_array[i]  #------ o(1)
             
-            print(biggest_num) 
+            print(biggest_num) #-------> o(1)
+            
+            
+            # o(1) x o(n) = o(n)
+            # o(1) x o(1) = o(1)
+            
+            # o(1) x o(n) = o(n) ---> time complexity as the dominator
             
