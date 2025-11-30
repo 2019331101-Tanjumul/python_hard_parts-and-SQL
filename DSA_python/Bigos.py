@@ -8,7 +8,7 @@
 
 
 
-#linear time complexity here O(N), the amount of time it takes the input the times it grows to the output 
+# linear time complexity here O(N), the amount of time it takes the input the times it grows to the output 
 
 # def lin_in(n): 
 #     for i in range(n): 
@@ -50,14 +50,14 @@
 
 # finding the biggest number in the array : 
 
-def find_biggest_number(simple_array):
-    biggest_num = simple_array[0] #------> o(1)
+# def find_biggest_number(simple_array):
+#     biggest_num = simple_array[0] #------> o(1)
     
-    for i in range(1,len(simple_array)): #------ o(n)
-        if biggest_num > simple_array:  #-------- o(1)
-            biggest_num = simple_array[i]  #------ o(1)
+#     for i in range(1,len(simple_array)): #------ o(n)
+#         if biggest_num > simple_array:  #-------- o(1)
+#             biggest_num = simple_array[i]  #------ o(1)
             
-            print(biggest_num) #-------> o(1)
+#             print(biggest_num) #-------> o(1)
             
             
             # o(1) x o(n) = o(n)
@@ -65,3 +65,10 @@ def find_biggest_number(simple_array):
             
             # o(1) x o(n) = o(n) ---> time complexity as the dominator
             
+
+
+
+
+
+
+
