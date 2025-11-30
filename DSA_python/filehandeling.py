@@ -20,4 +20,28 @@
 
 #file handeling 
 
-r = open('tanju_superman.txt','w') #here w means it will create if there is nothing found based on that name !
+# r = open('tanju_superman.txt','w') #here w means it will create if there is nothing found based on that name !
+# r.write('This is tanjumul im writing this in the fiel')
+# r.close()
+# r = open('tanju_superman.txt')
+# print(r.read())
+
+
+# r = open('tanju_superman.txt','w')
+
+# r.write('Im writing this the 2nd time here okay ?')
+
+# r.close()
+# r = r.open('tanju_superman.txt')
+
+# print(r.read())
+
+with open('tanjumul_batman.txt','w') as r : 
+    r.write('You know what im batman , SON')
+    
+with open('tanjumul_batman.txt')  as r: 
+    print(r.read())
+    
+    
+    
+    
