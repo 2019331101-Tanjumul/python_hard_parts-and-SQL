@@ -55,9 +55,18 @@ from pathlib import Path
 
 def readfileandfolder(): 
     path = Path('')
-    
+    items = list(path.rglob('*'))
+    for i, items in enumerate(items): 
+        print(f'{i+1} : {items}')
+        
 def createfile(): 
-    pass
+    readfileandfolder()
 
 int(input('Enter 1 for creating a file'))
+int(input('Enter 2 for read a file'))
+int(input('Enter 3 for update a file'))
+int(input('Enter 4 for delete a file'))
 
+if check == 1 : 
+    createfile()
+    
