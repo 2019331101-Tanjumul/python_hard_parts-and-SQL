@@ -43,11 +43,21 @@
 #     print(r.read())
     
     
-with open('tanju_flash.txt','w') as r : 
-    r.write('Tanjumulul is the heart of speed') 
+# with open('tanju_flash.txt','w') as r : 
+#     r.write('Tanjumulul is the heart of speed') 
 
-with open('tanju_flash.txt') as r : 
-    print(r.read())
+# with open('tanju_flash.txt') as r : 
+#     print(r.read())
     
+####project for file handeling : 
+
+from pathlib import Path 
+
+def readfileandfolder(): 
+    path = Path('')
     
-    
+def createfile(): 
+    pass
+
+int(input('Enter 1 for creating a file'))
+
