@@ -26,3 +26,10 @@ insert into orders (cust_id,ord_date,price) values
 ('3','2025-01-24',260),('2','2025-01-24',460),
 ('1','2025-01-24',760),('3','2025-01-24',660),
 ('1','2025-01-24',260),('4','2025-01-24',360);
+
+
+-- 3:01 -- 4:47 to finish this all  , /* Note : system Design , data warehousing , DBMS in 3 files 
+ -- OOPs then to finish it >> then jump into DSA take 2 modules with previous practice on , solve
+ -- 10 previus concepts one of 10 in sql for better grip.. substring or something , proper phases
+ --to draw what to learn when ! cloud - DB - DS - Dev(back) when with wahat and what ! ps is forever 
+ --*/
