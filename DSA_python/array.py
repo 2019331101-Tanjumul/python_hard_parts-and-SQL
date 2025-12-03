@@ -19,12 +19,34 @@
 
 #inserting in the begining to the array: 
 
-import array 
+from array import *
 
-my_array1 = array.array('i',[1,2,3,4,5,6])
-print(my_array1)
-
+# my_array1 = array.array('i',[1,2,3,4,5,6])
+# print(my_array1)
+#
+arr1 = array('i',[11,44,55,66,77,88,55,43,221,45])
 #inserting now ; 
-my_array1.insert(0,10) #inserting at the (position , value) 
+# my_array1.insert(0,10) #inserting at the (position , value) 
 
-print(my_array1)
+# print(my_array1)
+
+#traversal of an array 
+
+
+# def traversal_array(array): 
+#     for i in array: 
+#         print(i)
+    
+# traversal_array(arr1)
+
+
+
+from array import * 
+
+arr12 = array('i', [1,34,55,33,245,33,223,44])
+
+
+def perform_array(array): 
+    for i in array:
+        print(i)
+perform_array(arr12)
