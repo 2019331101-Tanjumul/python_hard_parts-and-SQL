@@ -59,8 +59,9 @@ def processing(elementss, typed = 'i'):
     
     arr = array(typed,elementss)
     
-    for ii in arr : 
-        print(ii)
+    for ii in arr : #--(n)--> o
+        print(ii) #------>O(1)  and it is the space complexity too o(1)
+        #the time comppexity will be o(n)
     
     return arr
 
