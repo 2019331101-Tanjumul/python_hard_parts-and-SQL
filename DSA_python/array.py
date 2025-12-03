@@ -55,14 +55,29 @@ arr1 = array('i',[11,44,55,66,77,88,55,43,221,45])
 #another way if i want to create a function that will create an array then i will initialize the elements 
 
 
-def processing(elementss, typed = 'i'): 
+# def processing(elementss, typed = 'i'): 
     
-    arr = array(typed,elementss)
+#     arr = array(typed,elementss)
     
-    for ii in arr : #--(n)--> o
-        print(ii) #------>O(1)  and it is the space complexity too o(1)
-        #the time comppexity will be o(n)
+#     for ii in arr : #--(n)--> o
+#         print(ii) #------>O(1)  and it is the space complexity too o(1)
+#         #the time comppexity will be o(n)
     
-    return arr
+#     return arr
 
-my_elements = processing([12,44,22,12])
+# my_elements = processing([12,44,22,12])
+
+
+## now if i want to access each elelment and i will create a funciton : 
+
+
+arr13 = array('i',[11,22,33,44,55,66,7])
+
+def find_array_num(array, index): 
+    if index > len(array):
+        print('Here is no such array num what you are giving index number')
+        
+    else: 
+        print(array[index])
+
+find_array_num(arr13,int(input('your array number :')))
