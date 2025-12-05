@@ -33,9 +33,12 @@ print(my_new_array)
 
 #accessing an element in a two dimentional array: 
 def accessElements(array , rowIndex , columnIndex): 
-    if rowIndex >= len(array) and columnIndex >= len(array[0]): 
-        print('Error ahead')
+    if rowIndex >= len(array) and columnIndex >= len(array[0]): #complextiy : 0(1)
+        print('Error ahead') #complextiy o(1)
     else: 
-        print(array[rowIndex][columnIndex])
-    
+        print(array[rowIndex][columnIndex]) #complextiy o(1)
+    #complextiy when in the multidimentional array it possibly be the complexity of o(mn)
 accessElements(my_new_array , 2,4)
+
+
+
