@@ -10,8 +10,9 @@ def serarching(array,value):
         for i in range(len(array)):
              for j in range(len(array[0])): 
                  if array[i][j] == value: 
-                     return True
-                 else: 
-                      False
-            
-print(serarching(my_new_array,51))
+                     return value
+        else: 
+                      
+                      return print('The number you are looking here in the array doesnt exitst')
+                      
+print(serarching(my_new_array,221))
