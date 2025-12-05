@@ -28,5 +28,5 @@ import numpy as np
 my_new_array = np.array([[1,2,3,4,5,6],[11,21,31,41,51,61],[12,22,32,42,52,62],[14,24,34,44,54,64]])
 # print(my_new_array)
 
-my_second_array = np.insert(my_new_array,0,[[10,10,10,10,10,10]],axis=0)
+my_second_array = np.append(my_new_array,[[10,10,10,10,10,10]],axis=0)
 print(my_second_array)
