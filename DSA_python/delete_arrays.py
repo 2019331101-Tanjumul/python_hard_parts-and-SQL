@@ -13,7 +13,8 @@ mynew_array = np.array([[81,82,83,84],[71,72,73,74],[61,62,63,64],[11,22,33,44]]
         
 
 # print(deletearray(mynew_array,61))
-        
+     
+     #python list alternative version of numpy   
 def deletearray(array, delNum): 
     arr_list = array.tolist()
     for i in range(len(arr_list)): 
