@@ -19,3 +19,5 @@ def serarching(array,value):
                       return 'The number you are looking here in the array doesnt exitst'
                       
 print(serarching(my_new_array,51))
+
+#starting the day with DSA Postgres & FastApi
