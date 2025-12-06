@@ -1,9 +1,20 @@
 import numpy as np
 
-mynew_array = np.array([[81,82,83,84],[71,72,73,74],[61,62,63,64],[11,22,33,44]])
+mynew_array = np.array([[81,82,83,84],
+                        [71,72,73,74],
+                        [61,62,63,64],
+                        [11,22,33,44]])
 
-mynew_array = np.delete(mynew_array,0,axis=0)
+# mynew_array = np.delete(mynew_array,2,axis=0)
+# print(mynew_array)
+
+mynew_array = np.delete(mynew_array,1,axis = 1 )
 print(mynew_array)
+
+
+
+
+# mynew_array = np.delete(mynew_array,2 , axis = 1)
 
 
 # def deletearray(array,delNum): 
