@@ -112,3 +112,7 @@ arr1 = array('i',[1,2,3,44,55,6]) #time complexity o(n)
 arr1.remove(55)
 
 print(arr1)
+
+
+#i took a day off planed a little and thought what i should be doing in 2 next month , building and breaking and reshaping my 
+#lost career ! Backend it is.. 
