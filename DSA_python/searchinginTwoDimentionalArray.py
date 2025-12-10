@@ -20,4 +20,4 @@ def serarching(array,value):
                       
 print(serarching(my_new_array,51))
 
-#starting the day with DSA Postgres & FastApi
+#starting the day with DSA Postgres & Django . changing up some plans. Will satart after coming back from my University tour
